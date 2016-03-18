@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="beaudience_1.1.19_without_beacons">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../libs/beaudience_1.1.19_without_beacons.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

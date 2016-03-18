@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pn_background" >
+
+    <RelativeLayout
+        android:id="@+id/pn_game_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp" >
+        
+        <ImageView
+            android:id="@+id/pn_game_list_company_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="false"
+            android:src="@drawable/logo_bw" />
+        
+        <ListView
+            android:id="@+id/pn_game_list_items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/pn_game_list_company_logo"
+            android:layout_marginBottom="5dp"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:background="@android:color/transparent" />
+        
+    </RelativeLayout>
+</RelativeLayout><!-- From: file:/Users/davidmartin/Documents/work/projects/android/pubnative-android-library/library/src/main/res/layout/pubnative_game_list.xml --><!-- From: file:/home/xiaoniu/test/TwitterEmoji/GradleBuild/mopub-sdk/build/intermediates/exploded-aar/net.pubnative/library/1.4.8/res/layout/pubnative_game_list.xml -->

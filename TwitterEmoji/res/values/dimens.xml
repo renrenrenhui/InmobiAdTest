@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_radius">5dp</dimen>
+    <dimen name="stroke_width">2dp</dimen>
+
+    <dimen name="dialog_item_padding_size">5dp</dimen>
+    <dimen name="dialog_main_padding_size">15dp</dimen>
+    <dimen name="dialog_title_size">15sp</dimen>
+    <dimen name="dialog_text_size">13sp</dimen>
+    <dimen name="dialog_confirm_text_size">16sp</dimen>
+
+    <dimen name="banner_item_size">60dp</dimen>
+    <dimen name="banner_width">300dp</dimen>
+
+    <dimen name="loading_view_size">5dp</dimen>
+
+    <dimen name="online_theme_width">120dp</dimen>
+    <dimen name="online_theme_height">108dp</dimen>
+    <dimen name="online_theme_item_default_height">135dp</dimen>
+    <dimen name="online_theme_item_padding">10dp</dimen>
+    <dimen name="online_theme_main_padding">20dp</dimen>
+
+    <dimen name="promotion_item_height">140dp</dimen>
+    <dimen name="promotion_item_width">100dp</dimen>
+
+    <dimen name="placed_alert_dialog_title_layout_marginLeft">15dp</dimen>
+    <dimen name="placed_alert_dialog_title_layout_marginTop">25dp</dimen>
+    <dimen name="placed_alert_dialog_message_layout_marginLeft">15dp</dimen>
+    <dimen name="placed_alert_dialog_message_layout_marginRight">15dp</dimen>
+    <dimen name="placed_alert_dialog_message_layout_marginTop">18dp</dimen>
+    <dimen name="placed_alert_dialog_message2_layout_marginTop">15dp</dimen>
+    <dimen name="placed_alert_dialog_message2_layout_marginLeft">15dp</dimen>
+    <dimen name="placed_alert_dialog_message2_layout_marginRight">15dp</dimen>
+    <dimen name="placed_alert_dialog_message_link_layout_marginTop">8dp</dimen>
+    <dimen name="placed_alert_dialog_message_link_layout_marginLeft">15dp</dimen>
+    <dimen name="placed_alert_dialog_message_link_layout_marginRight">15dp</dimen>
+    <dimen name="placed_alert_dialog_message_link_layout_marginBottom">3dp</dimen>
+    <dimen name="placed_alert_dialog_button_layout_marginTop">20dp</dimen>
+    <dimen name="placed_alert_dialog_button_layout_marginLeft">15dp</dimen>
+    <dimen name="placed_alert_dialog_button_layout_marginRight">15dp</dimen>
+    <dimen name="placed_alert_dialog_button_layout_marginBottom">20dp</dimen>
+    <dimen name="placed_alert_dialog_between_button_layout_marginRight">10dp</dimen>
+
+    <!--About-->
+    <dimen name="about_logo_width">130dp</dimen>
+    <dimen name="about_logo_height">130dp</dimen>
+    <dimen name="about_text_size">19sp</dimen>
+    <dimen name="about_margin_bottom">20dp</dimen>
+    <dimen name="about_margin_top">20dp</dimen>
+    <dimen name="about_btn_layout_width">172dp</dimen>
+    <dimen name="about_btn_layout_height">48dp</dimen>
+    <dimen name="about_btn_layout_margin_top">15dp</dimen>
+    <dimen name="about_btn_layout_text_size">18sp</dimen>
+    <dimen name="about_btn_layout_inside_width">120dp</dimen>
+</resources>

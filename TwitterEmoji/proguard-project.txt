@@ -1,0 +1,176 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+-ignorewarnings
+
+-keep class com.startapp.** {
+      *;
+}
+
+-keep class com.emojifamily.emoji.keyboard.font.view.** {
+    *;
+}
+
+-keep class com.emojifamily.emoji.keyboard.font.utils.** {
+    *;
+}
+
+-keep class com.emojifamily.emoji.keyboard.font.promotion.entry.** {
+    *;
+}
+
+-keep class com.nineoldandroids.** {
+    *;
+}
+-keep class com.ironsource.mobilcore.**{
+    *;
+}
+
+-keep class com.mopub.** {
+    *;
+}
+
+-keep class com.facebook.**{
+    *;
+}
+
+-keepattributes Exceptions, InnerClasses, Signature, Deprecated, SourceFile,LineNumberTable, *Annotation*, EnclosingMethod
+-dontwarn android.webkit.JavascriptInterface
+
+##---------------Begin: proguard configuration for Google Play Service  ----------
+-keep class * extends java.util.ListResourceBundle {
+    protected Object[][] getContents();
+}
+
+-keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
+    public static final *** NULL;
+}
+
+-keepnames @com.google.android.gms.common.annotation.KeepName class *
+-keepclassmembernames class * {
+    @com.google.android.gms.common.annotation.KeepName *;
+}
+
+-keepnames class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+##---------------End: proguard configuration for Google Play Service  ----------
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+##-------------Start: for UMENG ---------------
+-keepclassmembers class * {
+    public <init>(org.json.JSONObject);
+}
+
+-keep public class **.R$*{
+    public static final int *;
+}
+##-------------End: UMENG --------------------
+
+
+# Keep altbeacon classes
+-keep class org.altbeacon.** { *; }
+
+# Keep all benintoo classes
+-keep class com.beintoo.beaudiencesdk.** { *; }
+
+# Keep BeName Annotation
+-keepclassmembers class ** {
+   @com.beintoo.beaudiencesdk.annotation.BeName
+      public <fields>;
+      }
+# Retrofit
+-keep class retrofit.** { *; }
+-keep class com.squareup.okhttp.** { *; }
+-keep class com.google.gson.** { *; }
+
+##------------------------Start for Flurry--------------------
+-keep class com.flurry.** {
+	*;
+}
+-dontwarn com.flurry.**
+-keepattributes *Annotation*,EnclosingMethod,Signature
+-keepclasseswithmembers class * {
+		 public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+# Google Play Services library
+-keep class * extends java.util.ListResourceBundle {
+		 protected Object[][] getContents();
+}
+-keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
+		 public static final *** NULL;
+}
+-keepnames @com.google.android.gms.common.annotation.KeepName class *
+-keepclassmembernames class * {
+		 @com.google.android.gms.common.annotation.KeepName *;
+}
+-keepnames class * implements android.os.Parcelable {
+		 public static final ** CREATOR;
+}
+
+##------------------------End for Flurry--------------------
+
+##------------------------Start for PubNative-----------------
+-keep class org.droidparts.**{
+    *;
+}
+##------------------------End for PubNative--------------------
+
+##------------------------Start for yext-----------------------
+-keep class com.xone.** {*;}
+-dontwarn com.xone.**
+-dontwarn android.bluetooth.*
+##------------------------End for yext-------------------------
+
+#------------Start for Sense360------------------
+## Gson exclusions
+-keepattributes Signature
+-keep class sun.misc.Unsafe { *; }
+-keep class com.google.gson.examples.android.model.** { *; }
+## Guava exclusions
+-dontwarn sun.misc.Unsafe
+-dontwarn com.google.common.collect.MinMaxPriorityQueue
+-keepclasseswithmembers public class * {
+public static void main(java.lang.String[]);
+}
+#OKHTTP exclusions
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class com.squareup.okhttp.** { *; }
+-keep interface com.squareup.okhttp.** { *; }
+-dontwarn com.squareup.okhttp.**
+-dontwarn okio.**
+-keep class com.sense360.** {
+    *;
+}
+#-----------End for Sense360------------------------
+
+#------------Start for Inmobi------------------
+-keep class com.google.android.gms.ads.identifier.AdvertisingIdClient{
+public *;
+}
+-keep class com.google.android.gms.ads.identifier.AdvertisingIdClient$Info{
+public *;
+}
+#------------End for Inmobi------------------------

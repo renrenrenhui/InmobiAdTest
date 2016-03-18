@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.emojifamily.emoji.keyboard.font.emoji"
+        minSdkVersion 14
+        targetSdkVersion 22
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('../../kkkeyboardtheme.keystore')
+            storePassword 'kkkeyboardtheme'
+            keyAlias 'kkkeyboardtheme'
+            keyPassword 'kkkeyboardtheme'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), getCommonCodePath() + 'proguard-project.txt'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile getCommonCodePath() + 'AndroidManifest.xml'
+            java.srcDirs = [getCommonCodePath() + 'src']
+            res.srcDirs = [getCommonCodePath() + 'res']
+            assets.srcDirs = [getCommonCodePath() + 'assets']
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs getCommonCodePath() + 'aars'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: getCommonCodePath() + 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.android.support:recyclerview-v7:22.0.0'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.google.android.gms:play-services-location:8.4.0'
+    compile('com.google.android.gms:play-services-gcm:8.4.0') {
+        exclude module: 'play-services-measurement' // removed need for WAKE_LOCK permission
+    }
+    compile 'com.squareup.okhttp:okhttp:2.7.1'
+    compile 'com.github.bumptech.glide:glide:3.6.0'
+    compile 'com.google.code.gson:gson:2.3.1'
+}
+
+def getCommonCodePath() {
+    '../../'
+}
+
+dependencies {
+    compile project(':mopub-sdk')
+}

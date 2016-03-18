@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/xiaoniu/test/TwitterEmoji/res/values-xhdpi/dimens.xml -->
+    <eat-comment/>
+    <dimen name="button_radius">5dp</dimen>
+    <dimen name="dialog_confirm_text_size">16sp</dimen>
+    <dimen name="dialog_item_padding_size">5dp</dimen>
+    <dimen name="dialog_main_padding_size">15dp</dimen>
+    <dimen name="dialog_text_size">13sp</dimen>
+    <dimen name="dialog_title_size">15sp</dimen>
+    <dimen name="loading_view_size">5dp</dimen>
+    <dimen name="online_theme_height">135dp</dimen>
+    <dimen name="online_theme_item_padding">10dp</dimen>
+    <dimen name="online_theme_main_padding">20dp</dimen>
+    <dimen name="online_theme_width">150dp</dimen>
+    <dimen name="stroke_width">2dp</dimen>
+</resources>

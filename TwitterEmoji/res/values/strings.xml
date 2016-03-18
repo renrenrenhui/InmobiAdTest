@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Emoji</string>
+    <string name="ime_name">KK Keyboard</string>
+
+    <!-- Shuffle promotion in Main setting activity -->
+    <string name="on_loading">Market is opening, please wait...</string>
+    <string name="on_error">Sorry! Shuffle loading met error, please try it again</string>
+    
+    <string name="net_unavailable">Network Unavailable</string>
+    <string name="apply_error">"Application of this theme couldn't be done at this moment.Please try again later or enable it in keyboard app directly."</string>
+
+    <!--MoPub ad id-->
+    <string name="ad">AD</string>
+    <string name="action_native_ad_default">Open Link</string>
+</resources>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="placed-persistent-sdk-1.17">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../libs/placed-persistent-sdk-1.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

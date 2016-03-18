@@ -1,0 +1,51 @@
+<resources>
+    <style name="KKThemeLight" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/KKThemeLight.KKActionBar</item>
+    </style>
+    <style name="KKThemeLight.KKActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/kk_theme_light_action_bar_blue</item>
+    </style>
+    <style name="dialog_text_style">
+        <item name="android:textSize">@dimen/dialog_text_size</item>
+        <item name="android:textColor">@color/kk_theme_apply_action_bar_blue_pressed</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:padding">@dimen/dialog_item_padding_size</item>
+    </style>
+    <style name="dialog_title_style" parent="dialog_text_style">
+        <item name="android:textSize">@dimen/dialog_title_size</item>
+    </style>
+    <style name="dialog_button_style">
+        <item name="android:textSize">@dimen/dialog_text_size</item>
+        <item name="android:layout_marginTop">@dimen/dialog_item_padding_size</item>
+    </style>
+
+    <style name="ActionBarThemeOverlay" parent="">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlHighlight">#3fff</item>
+    </style>
+
+    <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="KKNewUITheme"
+           parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/main_frame_bg</item>
+        <item name="android:colorBackground">@color/main_frame_bg</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/dark_primary_color</item>
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="colorControlActivated">@color/accent_color</item>
+        <item name="colorControlNormal">@color/black_26_alpha</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+</resources>
